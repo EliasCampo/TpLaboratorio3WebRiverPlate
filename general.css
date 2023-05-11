@@ -1,0 +1,26 @@
+body{ /*este codigo de css lo saque de uiGradients*/
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.bg-white{
+    background-color: #ffffff;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    margin: 3%;
+}
+
+#banner-inicio{
+    width: 100%;
+}
+
+.imagen-galeria{
+    width: 70%;
+}
