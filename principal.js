@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", function(event){
+    //inicializa el tooltip de bootstrap
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    
+});
+
 function validarDatos(){
 
     let datosValidos = true;
@@ -71,3 +80,6 @@ function validarDatosContacto(){
 
     return validar;
 }
+
+
+

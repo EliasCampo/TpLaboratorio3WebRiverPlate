@@ -1,4 +1,4 @@
-body{ /*este codigo de css lo saque de uiGradients*/
+body{ /*este codigo de css lo saque de uiGradients PARA TODOS LOS FONDOS DE TODAS LAS PAGINAS*/
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -21,6 +21,76 @@ main{
     width: 100%;
 }
 
-.imagen-galeria{
-    width: 70%;
+.imagen-galeria{ /*TODAS LAS FOTOS DE GALERIA fotos.html*/
+    width: 300px;
+    height: 200px; 
 }
+
+div.desc{    /* LOS NOMBRES DE LOS JUGADORES fotos.html*/
+    padding: 15px;
+    text-align: center;
+    color:white;
+}
+
+
+.tituloGaleria{ /*titulo de apartado fotos.html*/
+    color: red;
+}
+
+.letrasTitulo{
+    color:white;
+    font-size: 120%;
+    padding-left: 30px;     /* margin: fuera padding: dentro*/
+    padding-top: 20px;
+}
+
+.carousel-item img { /*navbar de fotos galeria- fotos.html*/
+    width: 100%;
+    height: 800px;
+    margin-top: 50px;
+}
+
+
+#copyright{
+    color:rgb(209, 46, 46);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:18px;
+    font-size:larger;
+    margin-left: 30px;
+}
+
+
+.fondoContacto{
+    background-image:url(img/contactoFotos/monumental.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+footer {
+    bottom:0;
+}
+
+
+.redes{
+    font-size: 35px;
+    margin:0 18px;
+    padding-left: 30%;
+    background-color:rgb(207, 175, 175);
+}
+
+.fa-facebook:hover{
+    color:rgb(57, 57, 169);
+    font-size: 41px;
+}
+.fa-instagram:hover{
+    color:rgb(185, 19, 185);
+    font-size: 43px;
+}
+.fa-twitter:hover{
+    color:rgb(2, 2, 63);
+    font-size: 42px;
+}
+
+
