@@ -82,6 +82,7 @@
                         <label for="correo" class="form-label">Correo electronico</label>
                         <input type="email" class="form-control" id="correo" aria-describedby="emailHelp">
                         <p id="emailHelp" class="form-text">Nunca compartiremos tu correo electronico con nadie.</p>
+                        <input type="button" class="btn btn-success" value="Validar Correo" onclick="validarEmail(form.correo.value)"/>
                       </div> 
 
                       <p id="validacionError" class="form-text mt-3 mb-3 text-danger"></p>
@@ -89,6 +90,7 @@
                       <div class="d-grid gap-2">
                         <button class="btn btn-danger" type="button" onclick="return validarDatos()">Guardar</button>
                       </div>
+                     
                      
 
                 </form>

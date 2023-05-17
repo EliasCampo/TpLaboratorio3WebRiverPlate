@@ -56,6 +56,8 @@
                  <div class="mb-3">
                     <label for="correo" class="form-label">Correo electronico</label>
                     <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Escribe tu correo">
+                    <p id="emailHelp" class="form-text">Nunca compartiremos tu correo electronico con nadie.</p>
+                    <input type="button" class="btn btn-success" value="validar correo" onclick="validarEmail(form.correo.value)"/>
                   </div> 
 
                   <div class="mb-3">
@@ -77,31 +79,21 @@
 </div>
 
 
- 
-  
-
-
 <footer style="position: absolute; width: 100%;">
   <div class="redes">
-    <p>Visita nuestras páginas
+    <p>Visita nuestras redes
       <a href="https://www.facebook.com/riverplateoficial/" target="_blanck"><i class="fa-brands fa-facebook fa-xs"></i></a>
       <a href="https://www.instagram.com/riverplate/?hl=es" target="_blanck"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://twitter.com/RiverPlate" target="_blanck"><i class="fa-brands fa-twitter"></i></a>
     </p>
   </div>
   
-
   <p id="copyright" style="background-color:rgb(207, 175, 175);">
     Club Atletico River Plate - Copyright&copy; 2023 - Todos los derechos reservados
   </p>
-
-
-  
 </footer>
 
 </body>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script> <!--para que cuando achico la pagina se me vea la barra de herramienta, doc. de javascrip-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>

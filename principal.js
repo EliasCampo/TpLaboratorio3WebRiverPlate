@@ -83,3 +83,14 @@ function validarDatosContacto(){
 
 
 
+function validarEmail(correo){
+    let validacionEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/; /* expresiones regulares*/ 
+    let campoCorreo = validacionEmail.test(correo);
+    
+
+    if (campoCorreo==true){
+        alert("Correo válido");
+    }else{
+        alert("Correo no válido");
+    }
+}
