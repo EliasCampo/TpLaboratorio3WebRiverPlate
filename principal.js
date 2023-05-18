@@ -40,7 +40,16 @@ function validarDatos(){
     }
     else
         document.getElementById("validacionError").innerHTML = "";
-        
+
+
+    if(datosValidos)
+    {
+        datosValidos = validarEmail(correo);
+        if(!datosValidos)
+            document.getElementById("validacionError").innerHTML = "El correo ingresado no es valido";
+        else
+            document.getElementById("validacionError").innerHTML = "";
+    }        
 
     return datosValidos;
 }
@@ -77,6 +86,14 @@ function validarDatosContacto(){
     else
         document.getElementById("validacionContactoError").innerHTML = "";
         
+    if(validar)
+    {
+        validar = validarEmail(correo);
+        if(!validar)
+            document.getElementById("validacionContactoError").innerHTML = "El correo ingresado no es valido";
+        else
+            document.getElementById("validacionContactoError").innerHTML = "";
+    }        
 
     return validar;
 }
@@ -89,8 +106,8 @@ function validarEmail(correo){
     
 
     if (campoCorreo==true){
-        alert("Correo válido");
+        return true;
     }else{
-        alert("Correo no válido");
+        return false;
     }
 }

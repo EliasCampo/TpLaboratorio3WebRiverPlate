@@ -9,8 +9,9 @@
      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> <!--libreria de boostrap--> 
      <link rel="stylesheet" href="general.css"/>
      <link rel="icon" type="image/x-icon" href="img/favicon.ico"> <!--favicon aparece escudo en pagina web-->
-     <script src="https://kit.fontawesome.com/bf3490a25d.js" crossorigin="anonymous"></script> <!--ETIQUETA PARA REDES SOCIALES-->
+     
 </head>
+
 
 <body class="fondoContacto">
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">   <!--navbar con barra de navegacion-->
@@ -19,7 +20,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto"> <!--marginStart a la izquierda-->
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -57,7 +58,6 @@
                     <label for="correo" class="form-label">Correo electronico</label>
                     <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Escribe tu correo">
                     <p id="emailHelp" class="form-text">Nunca compartiremos tu correo electronico con nadie.</p>
-                    <input type="button" class="btn btn-success" value="validar correo" onclick="validarEmail(form.correo.value)"/>
                   </div> 
 
                   <div class="mb-3">
@@ -76,10 +76,10 @@
 
     </div>
 
-</div>
+  </div>
 
 
-<footer class="footerContacto">
+<footer class="footerEspecial">
   <div class="redes">
     <p>Visita nuestras redes
       <a href="https://www.facebook.com/riverplateoficial/" target="_blanck"><i class="fa-brands fa-facebook fa-xs"></i></a>
@@ -88,7 +88,7 @@
     </p>
   </div>
   
-  <p id="copyright" class="copyContacto">
+  <p class="copyright copyContacto">
     Club Atletico River Plate - Copyright&copy; 2023 - Todos los derechos reservados
   </p>
 </footer>
@@ -98,5 +98,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script> <!--para que cuando achico la pagina se me vea la barra de herramienta, doc. de javascrip-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
     <script src="./principal.js"></script>
+    <script src="https://kit.fontawesome.com/bf3490a25d.js" crossorigin="anonymous"></script> <!--ETIQUETA PARA REDES SOCIALES-->
     
 </html>

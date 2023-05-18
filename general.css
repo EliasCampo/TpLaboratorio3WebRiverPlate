@@ -16,7 +16,7 @@ main{
     margin: 3%;
 }
 
-#banner-inicio{
+.banner-inicio{
     width: 100%;
 }
 
@@ -48,7 +48,7 @@ div.desc{    /* LOS NOMBRES DE LOS JUGADORES fotos.html*/
     margin-top: 50px;
 }
 
-#copyright{
+.copyright{
     color:rgb(209, 46, 46);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin:18px;
@@ -60,6 +60,7 @@ div.desc{    /* LOS NOMBRES DE LOS JUGADORES fotos.html*/
     background-image:url(img/contactoFotos/monumental.png) ;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 footer {
@@ -99,9 +100,8 @@ footer {
 
 .fotosIzquierda{
     float: left;
-    width: 350px;
+    width: 90%;
     height: 200px;
-    margin-right: 15px;
 }
 
 .listaVertical{
@@ -118,15 +118,10 @@ ol{
 
 .parrafoGallardo{
     color: #ffffff;
-    margin-left: 25%;
 }
 
 .listaVertical h2{
     color:red;
-}
-
-.footerAsociate{
-    position: absolute;
 }
 
 .imagenesNoticias{
@@ -137,12 +132,19 @@ ol{
     width: 30%;
 }
 
-.footerContacto{
+
+.footerEspecial{
     position: absolute; 
     width: 100%;
 }
 
 .copyContacto{
     background-color:rgb(207, 175, 175);
+}   
+
+.fotoAsociar{
+    min-width: 100%; 
+    width: 100%; 
+    height: 100%;
 }
 
