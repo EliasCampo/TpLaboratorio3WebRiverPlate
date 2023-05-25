@@ -54,25 +54,25 @@
                 <form>
 
                     <div class="mb-3"> <!--margin button 3-->
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" id="nombre" class="form-control" 
+                        <label for="nombre" class="form-label">Nombre</label> <!--el atributo name me sirve para el metodo GET-->
+                        <input type="text" id="nombre" class="form-control" name="nombre"   
                         placeholder="Escribe tu nombre" required="true" autofocus> <!--autofocus para el curso ya aprezca en el cuadro de nombre-->
                     </div>            
                     
                     <div class="mb-3">
                         <label for="apellido" class="form-label">Apellido</label>  <!-- imput(para capturar informacion del usuario, el for se usa para relacionar la etiqueta con el nombre, entonces cuando hago clik en nomnbre me pone el curso en la casilla nombre ) -->  
-                        <input type="text" id="apellido" class="form-control"  
+                        <input type="text" id="apellido" class="form-control" name="apellido"  
                         placeholder="Escribe tu apellido" required="true">         <!--  type es un atributo para captar info del usuario, ID es el nombre del elemento, label es para indicar la informacion que debe proponer el usuario, name es para mostrar el paramentro que se va a mostrar en la url -->  
                     </div>
             
                     <div class="mb-3">
                         <label for="direccion" class="form-label">Direccion</label>
-                        <input type="text" id="direccion" class="form-control" 
+                        <input type="text" id="direccion" class="form-control" name="direccion"
                         placeholder="Escribe tu direccion" required="true">
                     </div>
             
                     <label for="sexo">Elige un sexo:</label>
-                    <select id="sexo" name="sexo" placeholder="Elige tu sexo" class="mb-4">
+                    <select id="sexo" name="sexo" placeholder="Elige tu sexo" class="mb-4"> 
                         <option value="Masculino">Masculino</option>
                         <option value="Femenino">Femenino</option>
                         <option value="No binario">No binario</option>
@@ -81,13 +81,13 @@
                      <div class="mb-3">
                         <label for="correo" class="form-label">Correo electronico</label>
                         <input type="email" class="form-control" id="correo" aria-describedby="emailHelp">
-                        <p id="emailHelp" class="form-text">Nunca compartiremos tu correo electronico con nadie.</p>
+                        <p id="emailHelp" class="form-text" name="correo">Nunca compartiremos tu correo electronico con nadie.</p>
                       </div> 
 
                       <p id="validacionError" class="form-text mt-3 mb-3 text-danger"></p>
 
                       <div class="d-grid gap-2">
-                        <button class="btn btn-danger" type="button" onclick="return validarDatos()">Guardar</button>
+                        <button class="btn btn-danger" type="submit" onclick="return validarDatos()">Guardar</button>
                       </div>
                      
                      
